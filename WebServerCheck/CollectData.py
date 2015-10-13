@@ -19,7 +19,7 @@ class EnvironmentInspector:
             version_dict['webserver'] = "nginx not installed"
         else:
             version_dict['webserver'] = "nginx"
-            if '1.6' not in  str(version_cmd).split()[2]:
+            if '1.2' not in  str(version_cmd).split()[2]:
                 version_dict['webserver_version'] = "Not version 1.2.x"
             else:
                 version_dict['webserver_version'] = str(version_cmd).split()[2]
